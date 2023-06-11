@@ -1,3 +1,9 @@
+import css from './Button.module.css';
+
 export const Button = ({ handelClick }) => {
-  return <button onClick={handelClick}>loadMore</button>;
+  return (
+    <button className={css.btn} onClick={handelClick}>
+      loadMore
+    </button>
+  );
 };

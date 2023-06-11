@@ -1,8 +1,9 @@
 import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
+import css from './ImageGallery.module.css';
 
 export const ImageGallery = ({ images, openModal }) => {
   return (
-    <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <ul className={css.list}>
       {images.map(imag => (
         <ImageGalleryItem openModal={openModal} key={imag.id} imag={imag} />
       ))}
