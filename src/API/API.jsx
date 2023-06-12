@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Audio } from 'react-loader-spinner';
 
 const API_KEY = '24435694-017d2bab3470121913608c0c0';
 axios.defaults.baseURL = 'https://pixabay.com/api/';
